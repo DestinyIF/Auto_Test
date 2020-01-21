@@ -1,0 +1,43 @@
+[
+  {
+    "description":"这是一个带cookies的get请求",
+    "request":{
+      "uri":"/get/with/cookies",
+      "method":"get",
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "text":"有cookies信息访问",
+      "headers":{
+        "Content-Type":"text/html;charset=GBK"
+      }
+    }
+  },
+  {
+    "description":"这是一个带cookies的post请求",
+    "request":{
+      "uri":"/post/with/cookies",
+      "method":"post",
+      "cookies":{
+        "login":"true"
+      },
+      "json":{
+        "name":"wenjie",
+        "age":"24"
+
+      }
+    },
+
+    "response":{
+      "status":200,
+      "json":{
+        "wenjie":"success",
+        "status":"1"
+      }
+    }
+
+  }
+
+]
