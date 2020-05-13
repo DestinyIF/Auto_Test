@@ -1,4 +1,22 @@
 [
+  { "description": "这是一个会返回cookies 信息的get请求",
+    "request": {
+      "uri":"/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "headers":{
+        "Content-Type":"text/html;charset=GBK"
+      },
+      "cookies":{
+        "login": "true"
+
+      },
+      "text": "恭喜你获得fuck + cookies信息成功"
+    }
+
+
+  },
   {
     "description":"这是一个带cookies的get请求",
     "request":{
@@ -9,14 +27,14 @@
       }
     },
     "response":{
-      "text":"有cookies信息访问",
+      "text":"需要cookies信息才能访问",
       "headers":{
         "Content-Type":"text/html;charset=GBK"
       }
     }
   },
   {
-    "description":"这是一个带cookies的post请求",
+    "description":"这是一个带cookies信息的post请求",
     "request":{
       "uri":"/post/with/cookies",
       "method":"post",
@@ -24,20 +42,18 @@
         "login":"true"
       },
       "json":{
-        "name":"wenjie",
-        "age":"24"
-
+        "name":"huhansan",
+        "age":"18"
       }
     },
-
     "response":{
       "status":200,
       "json":{
-        "wenjie":"success",
+        "huhansan":"success",
         "status":"1"
       }
     }
-
   }
+
 
 ]
