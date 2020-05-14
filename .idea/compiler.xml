@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Chapter11" />
         <module name="Chapter10" />
         <module name="Chapter9" />
         <module name="Chapter1" />
@@ -14,6 +15,7 @@
     <bytecodeTargetLevel target="9">
       <module name="Chapter1" target="6" />
       <module name="Chapter10" target="9" />
+      <module name="Chapter11" target="9" />
       <module name="Chapter9" target="9" />
       <module name="fun (1)" target="9" />
     </bytecodeTargetLevel>
@@ -22,6 +24,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Chapter1" options="-parameters" />
       <module name="Chapter10" options="-parameters" />
+      <module name="Chapter11" options="-parameters" />
       <module name="Chapter9" options="-parameters" />
     </option>
   </component>

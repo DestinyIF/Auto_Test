@@ -1,0 +1,22 @@
+
+
+#logging: <version>2.6.1</version>
+#  path: logs
+#  file: mylog.log
+
+spring:
+  application:
+    name: myTest
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.101:3306/course?serverTimezone=UTC
+    username: admin
+    password: 123456
+
+mybatis:
+  type-aliases-package: com.course.model
+  mapper-locations:
+    - mapper/*
+server:
+  port: 8088
