@@ -10,6 +10,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
+    # ?serverTimezone=UTC  指定时区
     url: jdbc:mysql://192.168.0.101:3306/course?serverTimezone=UTC
     username: admin
     password: 123456
@@ -19,4 +20,4 @@ mybatis:
   mapper-locations:
     - mapper/*
 server:
-  port: 8088
+  port: 9999

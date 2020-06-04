@@ -8,8 +8,15 @@
     </select>
 
     <insert id="addUser" parameterType="com.course.model.User">
-        insert into user(id,name,age,sex)
-        values(#{id},#{name},#{age},#{sex})
-
+        insert into user(name,age,sex)
+        values(#{name},#{age},#{sex})
     </insert>
+
+    <update id="updateUser" parameterType="com.course.model.User">
+        update user set name = #{name},age=#{age}
+        where id = #{id}
+    </update>
+    <delete id="deleteUser" parameterType="integer">
+        delete from user  where id = #{id}
+    </delete>
 </mapper>

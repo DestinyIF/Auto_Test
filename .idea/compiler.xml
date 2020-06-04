@@ -10,12 +10,14 @@
         <module name="Chapter10" />
         <module name="Chapter9" />
         <module name="Chapter1" />
+        <module name="Chapter12" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="9">
       <module name="Chapter1" target="6" />
       <module name="Chapter10" target="9" />
       <module name="Chapter11" target="9" />
+      <module name="Chapter12" target="9" />
       <module name="Chapter9" target="9" />
       <module name="fun (1)" target="9" />
     </bytecodeTargetLevel>
@@ -25,6 +27,7 @@
       <module name="Chapter1" options="-parameters" />
       <module name="Chapter10" options="-parameters" />
       <module name="Chapter11" options="-parameters" />
+      <module name="Chapter12" options="-parameters" />
       <module name="Chapter9" options="-parameters" />
     </option>
   </component>
