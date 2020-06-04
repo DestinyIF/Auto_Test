@@ -41,7 +41,7 @@ public class ConfigFile {
             uri = bundle.getString("addUser.uri");
         }
         testUrl = address + uri;
-        return testUrl;/
+        return testUrl;
     }
 
 
