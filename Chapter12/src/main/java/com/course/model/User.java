@@ -1,6 +1,6 @@
 package com.course.model;
 
-import lombok.Data;
+
 
 /**
  * 和表结构一样为了映射进来
@@ -8,7 +8,7 @@ import lombok.Data;
  * 让框架帮我我们做事情
  */
 
-@Data
+
 public class User {
     private int id;
     private String userName;
@@ -17,6 +17,19 @@ public class User {
     private String sex;
     private String permission;
     private String isDelete;
+
+    public User() {
+    }
+
+    public User(int id, String userName, String password, String age, String sex, String permission, String isDelete) {
+        this.id = id;
+        this.userName = userName;
+        this.password = password;
+        this.age = age;
+        this.sex = sex;
+        this.permission = permission;
+        this.isDelete = isDelete;
+    }
 
     @Override
     public String toString(){
@@ -31,4 +44,59 @@ public class User {
                 );
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public String getPermission() {
+        return permission;
+    }
+
+    public void setPermission(String permission) {
+        this.permission = permission;
+    }
+
+    public String getIsDelete() {
+        return isDelete;
+    }
+
+    public void setIsDelete(String isDelete) {
+        this.isDelete = isDelete;
+    }
 }
